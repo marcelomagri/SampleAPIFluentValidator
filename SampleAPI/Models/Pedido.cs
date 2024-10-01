@@ -47,4 +47,8 @@ namespace SampleAPI.Models
         }
     }
 
+    function VaiCorinthians()
+    {
+        console.log('Vai Corinthians');
+    }
 }
