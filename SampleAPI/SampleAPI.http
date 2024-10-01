@@ -1,0 +1,5 @@
+﻿@SampleAPI_HostAddress = http://localhost:5273
+
+GET {{SampleAPI_HostAddress}}/sample/{client}/{id}
+
+###
