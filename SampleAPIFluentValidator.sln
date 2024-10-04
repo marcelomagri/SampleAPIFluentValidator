@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAPI", "SampleAPI\SampleAPI.csproj", "{0B3778BE-A3B3-4136-972D-4A29D615FD85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleAPI", "SampleAPI\SampleAPI.csproj", "{0B3778BE-A3B3-4136-972D-4A29D615FD85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RustSampleAPI", "RustSampleAPI", "{981EBF7C-785F-4E9A-9FD0-AB89728600C6}"
+	ProjectSection(SolutionItems) = preProject
+		RustSampleAPI\Cargo.toml = RustSampleAPI\Cargo.toml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{536740A3-BBB1-4841-9D48-405482BB3E7E}"
+	ProjectSection(SolutionItems) = preProject
+		RustSampleAPI\src\main.rs = RustSampleAPI\src\main.rs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +28,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{536740A3-BBB1-4841-9D48-405482BB3E7E} = {981EBF7C-785F-4E9A-9FD0-AB89728600C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34BAB251-D020-4FDC-A806-CBB9E79D6117}
