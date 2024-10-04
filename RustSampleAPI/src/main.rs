@@ -12,7 +12,6 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
             .route("/", web::get().to(hello)) // Define a rota para a função hello
-            .route("/version", web::get().to(get_version))
     })
     .bind("127.0.0.1:8080")? // Liga o servidor ao endereço e porta
     .run() // Executa o servidor
