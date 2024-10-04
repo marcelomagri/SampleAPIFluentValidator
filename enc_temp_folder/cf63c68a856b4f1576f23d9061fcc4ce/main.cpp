@@ -123,7 +123,7 @@ int main() {
         return crow::response{ response_json }; // Retorna a resposta JSON
     });
 
-    app.port(32500).multithreaded().bindaddr("127.0.0.1").run();
+    app.port(32500).multithreaded().bindaddr("10.10.154.40").run();
 
     // Espera que o usuário pressione uma tecla
     // std::cout << "Pressione qualquer tecla para sair...";
